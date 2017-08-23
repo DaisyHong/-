@@ -26,3 +26,6 @@ $(".ly").on("click", "li", function () {
     $(".layer").show()
     return false
 })
+$(".layer").on("click",function(){
+    $(this).hide()
+})
