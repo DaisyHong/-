@@ -1,0 +1,144 @@
+@import "normalize.scss";
+@import "base.scss";
+.head {
+    height: 44px;
+    background-color: #f4483e;
+    display: flex;
+    text-align: center;
+    .back {
+        height: 44px;
+        width: 50px;
+        line-height: 44px;
+        font-size: 20px; // flex:1;    
+        a {
+            color: #ffffff;
+            height: 44px;
+            width: 50px;
+            display: block;
+        }
+    }
+    h1 {
+        font-size: 20px;
+        text-align: center;
+        line-height: 44px;
+        font-weight: 700;
+        color: white;
+        flex: 1;
+    }
+    .home {
+        height: 44px;
+        line-height: 44px;
+        width: 50px;
+        margin-right: 10px;
+        a {
+            display: inline-block;
+            height: 44px;
+            width: 50px;
+            background: url(../images/header_app.png) no-repeat center center;
+            background-size: 30px;
+        }
+    }
+}
+
+.quan_box {
+    text-align: left;
+    .quan_model {
+        background: #FFFFFF;
+        margin: 10px auto;
+        li {
+            float: left;
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            border: 1px solid #eeeeee;
+            display: block; // height: 75px;
+            margin-left: 5px;
+            margin-top: 5px;
+            overflow: hidden;
+            padding-top: 5px;
+            text-align: center;
+            font-size: 12px;
+            a {
+                display: block;
+                height: 100%;
+                text-decoration: none;
+                color: #5a5a5a;
+                img {
+                    max-height: 50px;
+                    width: 50px;
+                    vertical-align: middle;
+                    border: none;
+                    margin: 5px 20px;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 10px;
+    .page_foot {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        a {
+            display: inline-block;
+            width: 82px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+            background-color: #d4d4d4;
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+            border-bottom: 1px solid #bababa;
+            box-shadow: 0 0 1px #666;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        select {
+            width: 129px;
+            height: 32px;
+            border: 1px solid #bababa;
+            font-size: 16px;
+        }
+    }
+    .nav_foot {
+        margin-top: 20px;
+        height: 36px;
+        background-color: #ebebeb;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+        background: -moz-linear-gradient(top, #ffffff, #ebebeb);
+        background: -o-linear-gradient(top, #ffffff, #ebebeb);
+        border-top: solid 1px #ebebeb;
+        border-bottom: 1px solid #ccc;
+        line-height: 36px;
+        padding-left: 8px;
+        font-size: 14px;
+    }
+    .foot_top {
+        background: #efefef;
+        border-top: 1px solid #c4c4c4;
+        border-bottom: 1px solid #c4c4c4;
+        height: 34px;
+        line-height: 34px;
+        margin-top: 25px;
+        clear: both;
+        a {
+            box-sizing: border-box;
+            float: left;
+            font-size: 14px;
+            border-right: 1px solid #c4c4c4;
+            text-align: center;
+            width: 30%;
+        }
+    }
+    .foot_last {
+        background: #efefef;
+        text-align: center;
+        padding: 15px 0;
+        color: #666;
+        p {
+            font-size: 12px;
+        }
+    }
+}

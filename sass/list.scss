@@ -1,0 +1,222 @@
+@import "normalize.scss";
+@import "base.scss";
+header {
+    height: 44px;
+    background-color: #ff841d;
+    display: flex;
+    text-align: center;
+    .back {
+        height: 44px;
+        width: 50px;
+        line-height: 44px;
+        font-size: 20px; // flex:1;    
+        a {
+            color: #ffffff;
+        }
+    }
+    h1 {
+        font-size: 20px;
+        text-align: center;
+        line-height: 44px;
+        flex: 1;
+    }
+    .home {
+        height: 44px;
+        line-height: 44px;
+        width: 50px;
+        margin-right: 10px;
+        a {
+            display: inline-block;
+            height: 44px;
+            width: 50px;
+            background: url(../images/header_app.png) no-repeat center center;
+            background-size: 30px;
+        }
+    }
+}
+
+// 产品内容部分
+// .main {
+//     padding: 10px;
+//     // display:flex;
+//     // flex-direction: column;
+//     // box-sizing: border-box;
+//     .first {
+//         // display: flex;
+//         // box-sizing: border-box;
+//         .left {
+//             // float:left;
+//             height: 100px;
+//             width: 100px;
+//             display: flex;
+//             img {
+//                 height: 100%;
+//                 width: 100%;
+//                 text-align: center;
+//                 line-height: 100px;
+//                 display: block;
+//             }
+//         }
+//         .right {
+//             //  float:right; 
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: space-between;
+//             flex: 1;
+//             .top {}
+//             .bottom {
+//                 margin-bottom: 20px;
+//                 display: flex;
+//                 justify-content: space-between;
+//             }
+//         }
+//     }
+// }
+.container {
+    max-width: 960px;
+    margin: 0px auto;
+    .cu_list {
+        background-color: #ffffff;
+        text-align: left;
+        font-size: 14px;
+        max-width: 960px;
+        margin: 0px auto;
+       
+        ul {
+             
+            li {
+                padding: 14px 8px;
+                position: relative;
+                display:flex;
+                 border-bottom: 1px solid #e0e0e0;
+               
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #000;
+                     vertical-align: middle;
+                   
+                    img {
+                        display: block;
+                        float: left;
+                        width: 110px;
+                        border:none;
+                        vertical-align: middle;
+                    }
+                }
+                .info {
+                    padding-left: 30px;
+                    font-size: 14px;
+                    line-height: 24px;
+                   
+                    .title {
+                        color: #333333;
+                        word-break: break-all;
+                        font-size: 15px;
+                        line-height: 19px;
+                        min-height: 57px;
+                        text-align: left;
+                        font-weight: normal;
+                        span {
+                            color: #ff6c00;
+                            display: inline;
+                        }
+                    }
+                    .other {
+                        margin-top: 8px;
+                        color: #a1a1a1;
+                        .mall {
+                            color: #a1a1a1;
+                            font-size: 12px;
+                            float: left;
+                        }
+                        .comment {
+                            color: #a1a1a1;
+                            font-size: 12px;
+                            float: right;
+                            i {
+                                width: 14px;
+                                height: 15px;
+                                display: inline-block;
+                                background-size: auto 100%;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                vertical-align: middle;
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 10px; // background-color:gray;
+    .page_foot {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        a {
+            display: inline-block;
+            width: 82px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+            background-color: #d4d4d4;
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+            border-bottom: 1px solid #bababa;
+            box-shadow: 0 0 1px #666;
+            border-radius: 5px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        select {
+            width: 129px;
+            height: 32px;
+            border: 1px solid #bababa;
+            font-size: 16px;
+        }
+    }
+    .nav_foot {
+        margin-top: 20px;
+        height: 36px;
+        background-color: #ebebeb;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+        background: -moz-linear-gradient(top, #ffffff, #ebebeb);
+        background: -o-linear-gradient(top, #ffffff, #ebebeb);
+        border-top: solid 1px #ebebeb;
+        border-bottom: 1px solid #ccc;
+        line-height: 36px;
+        padding-left: 8px;
+        font-size: 14px;
+    }
+    .foot_top {
+        background: #efefef;
+        border-top: 1px solid #c4c4c4;
+        border-bottom: 1px solid #c4c4c4;
+        height: 34px;
+        line-height: 34px;
+        margin-top: 25px;
+        clear: both;
+        a {
+            box-sizing: border-box;
+            float: left;
+            font-size: 14px;
+            border-right: 1px solid #c4c4c4;
+            text-align: center;
+            width: 30%;
+        }
+    }
+    .foot_last {
+        background: #efefef;
+        text-align: center;
+        padding: 15px 0;
+        color: #666;
+        p {
+            font-size: 12px;
+        }
+    }
+}
